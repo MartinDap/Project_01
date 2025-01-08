@@ -1,4 +1,5 @@
 <% 5.times do %>
     <p>Hola Mundo</p>
-    <h4>Hola <%= @name %></h4>
+    <h1>Hola <%= params[:name] %></h1>
+    <h1>En cinco años tendrás <%= params[:age].to_i + 5 %> años</h1>
 <% end %>
